@@ -1,0 +1,15 @@
+
+.logo a {
+    display: flex;
+    align-items: center;
+
+    @include general-font-family-bold();
+
+    font-size: 30px;
+    line-height: 1.6;
+    color: $menu_color;
+}
+
+.logo img {
+    margin-right: 20px;
+}

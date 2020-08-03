@@ -1,0 +1,28 @@
+// Разрешения экрана
+$mobile_width: 320px;
+$mobile_width_only: 767px;
+$tablet_width: 768px;
+$tablet_width_only: 1149px;
+$desktop_width: 1200px;
+
+// Отступы
+$mobile_padding: 30px;
+$tablet_padding: 50px;
+$desktop_padding: 50px;
+
+$header_logo_space: 200px;
+
+// Цвета шрифтов
+$menu_color: #3b3b3b;
+$text_color: #727272;
+$text_color--lighter: #bebebe;
+$active_color: #a2c852;
+
+// Цвета фонов
+$primary_bg_color: #ffffff;
+$secondary_bg_color: #f6f6f6;
+
+// Состояние элементов
+$element_active_opacity: 0.6;
+
+$retina: 1.5dppx;

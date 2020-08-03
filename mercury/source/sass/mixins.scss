@@ -1,0 +1,38 @@
+// Примеси
+
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src:
+            url("../fonts/#{$file_name}.woff2") format("woff2"),
+            url("../fonts/#{$file_name}.woff") format("woff");
+    }
+}
+
+@mixin general-font() {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+    color: #444444;
+    letter-spacing: normal;
+}
+
+@mixin general-font-family() {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+}
+
+@mixin general-font-family-bold() {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+}
+
+@mixin flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
