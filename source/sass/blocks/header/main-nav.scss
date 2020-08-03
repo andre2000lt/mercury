@@ -1,0 +1,37 @@
+/* -- ГЛАВНАЯ НАВИГАЦИЯ -- */
+
+.main-nav {
+    width: calc(100% - $header_logo_space);
+}
+
+.main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.main-nav__list li {
+    margin-left: 15px;
+}
+
+.main-nav__list a {
+    @include general-font-family-bold();
+
+    font-size: 18px;
+    line-height: 1.33;
+    color: $menu_color;
+
+    &:hover {
+        color: $active_color;
+    }
+
+    &:active {
+        color: $menu_color;
+        opacity: $element_active_opacity;
+    }
+}
